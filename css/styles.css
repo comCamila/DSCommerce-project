@@ -16,11 +16,36 @@ html, body {
     background-color: rgb(224, 224, 224);
 }
 
+main {
+    padding: 0 20px;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/* generic styles */
+
+.dsc-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.dsc-mb20 {
+    margin-bottom:20px;
+}
+
+.dsc-mt20 {
+    margin-top:20px;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/* header styles */
+
 header {
     background-color: steelblue;
     height: 70px;
     display: flex;
     align-items: center;
+    padding: 0 20px;
 }
 
 nav {
@@ -29,28 +54,39 @@ nav {
     align-items: center;
 }
 
-.container {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
+nav a {
+    font-size: 17px;
+    font-weight: 700;
 }
 
-.card {
+/*---------------------------------------------------------------------------------------------*/
+/* card styles */
+
+.dsc-card {
     border-radius: 7px 7px 7px 7px;
     background-color: aliceblue;
 }
 
-.line-bottom {
+/*---------------------------------------------------------------------------------------------*/
+/* buttom styles */
+
+.dsc-line-bottom {
     border-bottom: 1px solid #d9d9d9;
 }
 
-.btn-page-container {
-    width: 220px;
+.dsc-btn-page-container {
+    width: 100%;
     display: grid;
     grid-gap: 20px;
 }
 
-.btn {
+@media (min-width: 576px) {
+    .dsc-btn-page-container {
+        width: 220px;
+    }    
+}
+
+.dsc-btn {
     border-radius: 4px;
     height: 42px;
     font-size: 16px;
@@ -61,17 +97,24 @@ nav {
     background-color: rgb(8, 82, 219);
 }
 
-.btn-blue {
+.dsc-btn-blue {
     background-color: rgb(8, 82, 219);
     color: #fff;
 }
 
-.btn-white {
+.dsc-btn-white {
     background-color: #fff;
     color:  rgb(8, 82, 219);
     border: 1px solid  rgb(8, 82, 219);
 }
 
-.mb20 {
-    margin-bottom:20px;
+.dsc-btn-next-page {
+    border: 1px solid rgb(8, 82, 219);
+    padding: 10px;
+    border-radius: 4px;
+    color: rgb(8, 82, 219);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
 }
