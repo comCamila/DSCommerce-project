@@ -214,6 +214,20 @@ nav a {
     padding-left: 4px;
 }
 
+.dsc-select:invalid {
+    color: rgb(126, 126, 126);
+}
+
+.dsc-select option[disabled] {
+    display: none;
+}
+
+.dsc-textarea {
+    resize: none;
+    height: 128px;
+    padding-top: 10px;
+}
+
 @media (min-width: 576px) {
     .dsc-form h2 {
         font-size: 28px;
