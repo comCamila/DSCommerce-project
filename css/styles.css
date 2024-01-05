@@ -37,6 +37,12 @@ main {
     margin-top:20px;
 }
 
+.dsc-section-title {
+    text-align: center;
+    color:rgb(97, 95, 95);
+    font-size: 18px;
+}
+
 /*---------------------------------------------------------------------------------------------*/
 /* header styles */
 
@@ -234,3 +240,20 @@ nav a {
     }
 }
 
+/*---------------------------------------------------------------------------------------------*/
+/* table styles */
+
+.dsc-table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.dsc-table thead {
+    background-color: #ffffff;
+}
+
+.dsc-table tbody {
+    background-color: #ffffff;
+
+}
